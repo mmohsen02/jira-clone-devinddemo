@@ -3,7 +3,7 @@ import { TextFieldModule } from '@angular/cdk/text-field';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ContentLoaderModule } from '@ngneat/content-loader';
+// import { ContentLoaderModule } from '@ngneat/content-loader'; // Temporarily disabled - not compatible with Angular 18
 import { AutofocusDirective } from '@trungk18/core/directives/autofocus.directive';
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
@@ -70,7 +70,7 @@ import { ProjectComponent } from './project.component';
     FormsModule,
     ReactiveFormsModule,
     JiraControlModule,
-    ContentLoaderModule,
+    // ContentLoaderModule, // Temporarily disabled - not compatible with Angular 18
     QuillModule
   ]
 })
