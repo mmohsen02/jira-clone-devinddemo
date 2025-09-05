@@ -20,8 +20,8 @@
         nzNoAnimation>
         <ng-container *ngFor="let option of priorities">
             <li nz-menu-item
-                *ngIf="!isPrioritySelected(option.value)"
-                (click)="updateIssue(option.value)">
+                *ngIf="!isPrioritySelected($any(option.value))"
+                (click)="updateIssue($any(option.value))">
                 <div class="flex items-center">
                     <svg-icon [name]="option.icon"
                               [size]="20"

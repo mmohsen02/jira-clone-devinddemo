@@ -14,8 +14,8 @@
         nzNoAnimation>
         <ng-container *ngFor="let option of issueTypes">
             <li nz-menu-item
-                *ngIf="!isTypeSelected(option.value)"
-                (click)="updateIssue(option.value)">
+                *ngIf="!isTypeSelected($any(option.value))"
+                (click)="updateIssue($any(option.value))">
                 <div class="flex items-center">
                     <svg-icon [name]="option.icon"
                               [size]="20">
